@@ -3,7 +3,7 @@
 if [ -z $1 ]
 then
     echo "Missed first parameter"
-    exit
+    exit 1
 else
     directory=$1
 fi
