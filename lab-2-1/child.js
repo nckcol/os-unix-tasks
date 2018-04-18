@@ -6,6 +6,7 @@ if (process.send) {
 }
 
 let programs = [];
+let 
 
 process.on("message", message => {
   switch (message.type) {
@@ -14,7 +15,15 @@ process.on("message", message => {
       process.send(Math.round(Math.random() * programs.length));
       break;
     case messages.LAUNCH_APPROVE:
-      console.log("dssd");
+      launch();
+      setTimeout(terminate(), );
       break;
   }
 });
+
+makeGenerator = (from, to) => () => {
+
+}
+
+const launch = process => {};
+const terminate = process => () => {};

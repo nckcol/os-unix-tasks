@@ -18,19 +18,22 @@ const PROGRAMS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 let childProcesses = [];
 
+const handleReadline = rl => subprocesses => {
+  const childNumber = filterSubprocessesNumber(subprocesses);
+
+  childProcesses = range(childNumber).map(forkChildAndSave);
+
+  rl.close();
+};
+
 rl.question(
   `Enter number of subprocesses from ${MIN_SUBPROCESSES_NUMBER} to ${MAX_SUBPROCESSES_NUMBER} (${DEFAULT_SUBPROCESSES_NUMBER}): `,
-  subprocesses => {
-    const childNumber = filterSubprocessesNumber(subprocesses);
-
-    childProcesses = range(childNumber).map(i => forkChildAndSave(i));
-
-    rl.close();
-  }
+  handleReadline(rl)
 );
 
 const handleMessage = child => message => {
   console.log("message from child:", message);
+
   //child.send("Hi");
 };
 
