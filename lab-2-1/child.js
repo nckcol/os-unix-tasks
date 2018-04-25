@@ -1,4 +1,6 @@
-const messages = require("./messages.js");
+const messages = require("./messages");
+const actions = require("./actions");
+
 const id = process.argv[2];
 
 if (process.send) {
@@ -6,7 +8,6 @@ if (process.send) {
 }
 
 let programs = [];
-let 
 
 process.on("message", message => {
   switch (message.type) {
@@ -16,14 +17,18 @@ process.on("message", message => {
       break;
     case messages.LAUNCH_APPROVE:
       launch();
-      setTimeout(terminate(), );
+      setTimeout(terminate());
       break;
   }
 });
 
-makeGenerator = (from, to) => () => {
+makeGenerator = (from, to) => () => {};
 
-}
+const launch = program => {};
+const terminate = program => () => {
+  process.send(actions.launchEnd(program));
+};
 
-const launch = process => {};
-const terminate = process => () => {};
+const log = message => {
+  process.send(actions.logChild(message));
+};
