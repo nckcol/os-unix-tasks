@@ -1,0 +1,17 @@
+{
+  "name": "lab-1-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "find-files.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "glob": "^7.1.2",
+    "glob-fs": "^0.1.7",
+    "mv": "^2.1.1"
+  }
+}
