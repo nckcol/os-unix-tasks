@@ -1,0 +1,47 @@
+[ 0Xc.ff0p1 ]
+[ -0xc.ff0p1 ]
+
++0xc.ff0p-1
+
+[ 0x0.ff0p1 ]
+
+0XD.bbAC63P999012
+-0xB
+0x6.p+568
+0X9.p+5967947894897897747228
+0xD.P53
+
+0xD!P53
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices sit amet ex ut mollis. Praesent aliquet nisl eget 
+massa sodales, ac pellentesque dolor tristique. Maecenas facilisis eleifend lacinia. Aliquam rhoncus placerat neque sit 
+amet molestie. Fusce gravida [ 0xc. ] massa nec diam eleifend, mattis tincidunt leo interdum. Maecenas viverra nibh id elit 
+mollis ullamcorper. Praesent vitae dolor vel mi vehicula aliquet. Integer volutpat erat et luctus gravida. Integer 
+commodo elementum tortor in suscipit. Aliquam nec nulla id felis tempor porttitor. Proin faucibus ornare sem. Fusce 
+quis nulla fermentum, tempor velit ac, feugiat enim. Curabitur ac tincidunt massa. Proin dignissim nulla nec ipsum 
+semper, eu blandit urna tristique. In non [ 0xc.ff0p1 ] fermentum leo.
+
+-0XF.
+
+2018/1/3
+
+Integer et tincidunt ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+Donec fringilla nisi nec ex luctus, eu ornare neque maximus. Etiam luctus sed lacus sit amet fringilla. Mauris 
+tempor neque nec consequat pellentesque. Donec nec bibendum nibh. Aenean vulputate egestas fringilla. Ut a blandit 
+orci, a venenatis neque. In maximus egestas libero ac molestie. Morbi consectetur, nibh eu vestibulum venenatis, 
+ligula odio tempus orci, at placerat ex ex sed neque. In at fringilla massa, imperdiet posuere enim. Aenean iaculis 
+nulla blandit consequat fringilla. Donec sollicitudin purus in libero pellentesque tincidunt.
+
+Nullam in lorem tristique, blandit mi feugiat, iaculis magna. Vivamus vel felis a leo viverra maximus. Vivamus 
+ultrices suscipit eleifend. Curabitur vitae lacus dolor. Donec tincidunt dui eu suscipit commodo. Sed sollicitudin 
+turpis nisi, eget posuere mauris hendrerit a. Aliquam luctus pellentesque volutpat. Nulla in lorem consequat,
+ maximus nunc et, hendrerit ante. Maecenas bibendum semper nibh efficitur luctus. Sed convallis tempor libero, 
+ tincidunt iaculis leo ultrices vel. Integer lobortis, justo nec posuere luctus, tellus diam accumsan nisi, 
+ ornare tempor ligula nisl eget lorem. Donec ut nisl nunc.
+
+Morbi blandit tincidunt leo sit amet semper. Integer ultricies sed lorem nec elementum. Etiam et aliquet lorem. 
+Curabitur ultricies sapien sit amet est sollicitudin posuere. Integer imperdiet, magna eget hendrerit mollis, elit
+ lorem varius nulla, ac convallis urna diam vel purus. Aenean suscipit ex ac lacus ornare vehicula. Morbi vehicula
+  tempor euismod. Phasellus ultricies finibus erat at vestibulum. Aenean scelerisque id nisl non venenatis. Morbi 
+  pellentesque mauris dui, at lacinia purus pellentesque vel. Aenean pretium dignissim elit semper rhoncus. Sed vitae 
+  augue tempus, dictum mauris ac, dictum quam.
