@@ -9,11 +9,12 @@ const init = programs => {
   };
 };
 
-const launchRequest = propgram => {
+const launchRequest = (program, delay) => {
   return {
     type: messages.LAUNCH_REQUEST,
     payload: {
-      programs
+      program,
+      delay
     }
   };
 };
@@ -22,25 +23,43 @@ const launchApprove = program => {
   return {
     type: messages.LAUNCH_APPROVE,
     payload: {
-      programs
+      program
     }
   };
 };
 
-const launchEnd = program => {
+const launch = program => {
   return {
-    type: messages.LAUNCH_FINISH,
+    type: messages.LAUNCH,
     payload: {
-      programs
+      program
     }
   };
 };
 
-const logChild = message => {
+const terminate = program => {
   return {
-    type: message.LOG,
+    type: messages.TERMINATE,
     payload: {
-      message
+      program
+    }
+  };
+};
+
+const logChild = text => {
+  return {
+    type: messages.LOG,
+    payload: {
+      text
+    }
+  };
+};
+
+const errorChild = text => {
+  return {
+    type: messages.ERROR,
+    payload: {
+      text
     }
   };
 };
@@ -49,6 +68,8 @@ module.exports = {
   init,
   launchApprove,
   launchRequest,
-  launchEnd,
-  logChild
+  launch,
+  terminate,
+  logChild,
+  errorChild
 };
