@@ -1,18 +1,61 @@
 const net = require("net");
-const { Duplex } = require("stream");
+const { PassThrough } = require("stream");
 
-const ipStream = new Duplex();
-const ips = [];
+/* Addresses registry */
+
+let addressRegistry = [];
+let currentId = 0;
+
+const getAddressList = () => addressRegistry.map(record => record.address);
+
+const registerAddress = address => {
+  addressRegistry.push({
+    id: currentId,
+    address
+  });
+  return currentId++;
+};
+
+const removeAddress = id => {
+  addressRegistry = addressRegistry.filter(record => record.id !== id);
+};
+
+/* Server */
+
+const addressStream = new PassThrough();
 
 const server = net.createServer(function(socket) {
-  const { address, port } = socket.address();
+  const { address } = socket.address();
 
-  socket.write(JSON.stringify(ips));
+  addressStream.pipe(socket);
 
-  ips.push(address);
-  ipStream.push(address);
+  addressStream.push(
+    JSON.stringify({
+      event: "NEW",
+      payload: address
+    })
+  );
 
-  socket.pipe(ipStream);
+  setTimeout(() => {
+    socket.write(
+      JSON.stringify({
+        event: "REGISTRY",
+        payload: getAddressList()
+      })
+    );
+
+    const id = registerAddress(address);
+  }, 40);
+
+  console.log(`Client ${address} connected`);
+
+  socket.on("close", () => {
+    addressStream.unpipe(socket);
+    removeAddress(id);
+    console.log(`Client ${address} disconnected`);
+  });
 });
 
-server.listen(15250, "127.0.0.1");
+server.listen(15250, "127.0.0.1", () => {
+  console.log("Server started!");
+});
